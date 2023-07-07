@@ -47,7 +47,8 @@ export default defineConfig((env) => {
       proxy: {
         '/api': {
           // target: 'https://u104788-9a62-38eec028.east.seetacloud.com:8443',
-          target: 'http://192.168.0.109:8000',
+          // target: 'http://192.168.0.109:8000',
+					target: 'https://query-gpt-silk.vercel.app:8000/',
           changeOrigin: true, // 允许跨域
           rewrite: path => path.replace('/api/', ''),
         },
